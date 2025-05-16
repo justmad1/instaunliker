@@ -1,0 +1,14 @@
+# Python venv
+venv/
+__pycache__/
+
+# Logs and caches
+*.log
+*.csv
+logs/
+
+# Env
+.env
+
+# Session
+session.json
