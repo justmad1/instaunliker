@@ -48,26 +48,16 @@ INSTAGRAM_USERNAME=YOUR_INSTAGRAM_USERNAME
 INSTAGRAM_PASSWORD=YOUR_INSTAGRAM_PASSWORD
 ```
 
-3. Create a virtual environment
-
-`python -m venv venv`
-
-4. Activate it
-
-On Windows:
-`venv\Scripts\activate`
-
-On macOS/Linux:
-`source venv/bin/activate`
-
-5. Install dependencies
-
-`pip install -r requirements.txt`
-
-6. Run the script:
+3. Run 'run.sh' on Mac/Linux
 
 ```bash
-python instagram_unlike.py
+./run.sh
+```
+
+or 'run.bat' on Windows
+
+```bash
+run.bat
 ```
 
 Follow the prompts to configure the script.

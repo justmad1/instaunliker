@@ -15,3 +15,9 @@ session.json
 
 # vscode
 .vscode/
+
+# DB
+*.db
+
+# Mac
+.DS_Store
