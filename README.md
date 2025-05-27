@@ -1,23 +1,24 @@
 # Instagram Unlike Script
 
-This script allows you to **unlike Instagram posts** in bulk using the `instagrapi` Python library. It supports:
+This script allows you to **unlike Instagram posts** in bulk using the `instagrapi` Python library.
 
-- Unliking all liked posts (excluding those from followed users)
-- Unliking all liked posts regardless of user
-- Unliking liked posts by a specific Instagram username
-- Sending optional Telegram notifications about progress and errors
-- Logging unliked posts and statistics
+It can:
+
+- Create a database of all liked posts
+- Unlike liked posts by a specific Instagram username
+- Send optional Telegram notifications about progress and errors
+- Log unliked posts and statistics
 - Multilanguage support (English and Russian)
 
 ---
 
 ## Features
 
-- Efficiently fetches liked posts in chunks to avoid rate limits
+- Efficiently fetches liked posts and creates database to avoid rate limits
 - Supports session reuse via saved `session.json`
 - Customizable limits and pause intervals to mimic human behavior
 - Saves logs and stats into a `logs/` folder
-- Translations are stored separately in `translations.json`
+- Translations are stored separately in `lang/translations.json`
 
 ---
 
@@ -27,12 +28,6 @@ This script allows you to **unlike Instagram posts** in bulk using the `instagra
 - [instagrapi](https://github.com/adw0rd/instagrapi)
 - [python-dotenv](https://github.com/theskumar/python-dotenv)
 - `requests` package
-
-Install dependencies:
-
-```bash
-pip install instagrapi python-dotenv requests
-```
 
 ---
 
@@ -67,22 +62,18 @@ Follow the prompts to configure the script.
 ### Configuration Constants
 
 - MAX_UNLIKES_PER_RUN: Max number of unlikes per script run (default 500)
-- SHORT_PAUSE_RANGE: Pause time between unlikes in seconds (default 20-35)
+- SHORT_PAUSE_RANGE: Pause time between unlikes in seconds (default 5-10)
 - BLOCK_SIZE_RANGE: Number of unlikes between longer pauses (default 80-120)
 - LONG_PAUSE_RANGE: Length of long pauses in seconds (default 2700-4500)
 
 ### Logs and Stats
 
-- All cache files, logs, and stats are saved inside the logs/ folder:
-- liked_cache.json — cached liked post IDs
-- unliked_log.json — IDs of posts already unliked
-- unliked_stats.csv — CSV log of unliked posts with timestamp, post ID, author username, full name, and post URL
+- All cache files, logs, and stats are saved inside the `logs/` folder:
 
 ---
 
 ## Troubleshooting
 
-- If you get JSON decode errors or missing data, Instagram’s API may have changed. Update instagrapi or check their repo for fixes.
 - Session problems: Delete session.json and log in again.
 - For Telegram message failures, verify your bot token and chat ID.
 

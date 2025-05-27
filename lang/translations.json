@@ -1,0 +1,42 @@
+{
+  "en": {
+    "telegram_prompt": "Send notifications to Telegram? (y/n): ",
+    "enter_username": "Enter the username to unlike posts from: ",
+    "start_specific": "🚀 Unliking posts from @{username}",
+    "unliking": "Unliked post {id} by @{username}",
+    "pause_msg": "⏸️ Pause for {minutes:.1f} min after {count} unlikes",
+    "error": "❌ Error during unlike: {error}",
+    "done": "✅ Done! Unliked {count} posts.",
+    "no_posts_user": "⚠️ No posts from @{username} found in DB.",
+    "creating_db": "Database not found. Creating new DB...",
+    "db_created": "✅ Database created successfully.",
+    "db_exists": "✅ Database file found.",
+    "session_not_found": "⚠️ session.json not found. Logging in via username and password...",
+    "fetching_liked": "📥 Fetching liked posts...",
+    "liked_fetched": "✅ {count} liked posts fetched.",
+    "fetching_users": "📡 Fetching followed users...",
+    "following_count": "✅ Following {count} users.",
+    "save_summary": "💾 {saved} posts processed, {skipped} skipped (deleted or no user).",
+    "tg_save_summary": "📥 DB filled: {saved} posts saved, {skipped} skipped."
+  },
+  "ru": {
+    "telegram_prompt": "Отправлять уведомления в Telegram? (y/n): ",
+    "enter_username": "Введите имя пользователя для анлайка: ",
+    "start_specific": "🚀 Анлайкаем посты пользователя @{username}",
+    "unliking": "Удалён лайк с поста {id} пользователя @{username}",
+    "pause_msg": "⏸️ Пауза {minutes:.1f} мин после {count} анлайков",
+    "error": "❌ Ошибка при анлайке: {error}",
+    "done": "✅ Готово! Удалено {count} лайков.",
+    "no_posts_user": "⚠️ В БД нет постов пользователя @{username}.",
+    "creating_db": "Файл БД не найден. Создаю новую БД...",
+    "db_created": "✅ База данных успешно создана.",
+    "db_exists": "✅ Файл БД найден.",
+    "session_not_found": "⚠️ session.json не найден. Вход в по логину и паролю...",
+    "fetching_liked": "📥 Получаем лайкнутые посты...",
+    "liked_fetched": "✅ Получено {count} лайкнутых постов.",
+    "fetching_users": "📡 Получаем список подписок...",
+    "following_count": "✅ Подписки: {count} пользователей.",
+    "save_summary": "💾 Обработано {saved} постов, пропущено {skipped} (удалены или без пользователя).",
+    "tg_save_summary": "📥 БД заполнена: сохранено {saved} постов, пропущено {skipped}."
+  }
+}

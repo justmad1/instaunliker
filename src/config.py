@@ -13,6 +13,7 @@ SHORT_PAUSE_RANGE = (5, 10)
 BLOCK_SIZE_RANGE = (80, 120)
 LONG_PAUSE_RANGE = (45 * 60, 75 * 60)
 
-DB_FILE = "insta_likes.db"
-TRANSLATION_FILE = "translations.json"
+SESSION_FILE = "session.json"
+DB_FILE = "db/posts.db"
+TRANSLATION_FILE = "lang/translations.json"
 STATS_FILE = "logs/unliked_stats.csv"

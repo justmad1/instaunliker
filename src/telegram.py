@@ -1,6 +1,7 @@
 import requests
 from config import TELEGRAM_TOKEN, TELEGRAM_CHAT_ID
 
+
 def send_telegram_message(text, send_telegram):
     if not send_telegram or not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
         return
