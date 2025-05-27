@@ -1,8 +1,10 @@
 import sqlite3
+import os
 from config import DB_FILE
 
 
 def init_db():
+    os.makedirs(os.path.dirname(DB_FILE), exist_ok=True)
     with sqlite3.connect(DB_FILE) as conn:
         c = conn.cursor()
         c.execute(
