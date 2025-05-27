@@ -57,6 +57,10 @@ run.bat
 
 Follow the prompts to configure the script.
 
+Important (For Windows): Make sure you have Python 3.8+ installed on your system.
+
+Download: https://www.python.org/downloads/windows/
+
 ---
 
 ### Configuration Constants
